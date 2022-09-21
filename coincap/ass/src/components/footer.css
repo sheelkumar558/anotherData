@@ -1,0 +1,11 @@
+.foot-cont{
+    display: grid;
+    justify-content: space-around;
+    background-color: blue;
+    grid-template-columns: repeat(4,200px);
+    padding: 50px;
+}
+p{
+    color: black;
+  
+}
