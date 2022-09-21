@@ -21,7 +21,7 @@ const Showdata = () => {
           <div className="rank-div">
             <p className="ptag">Rank</p>
             <p className="ptag">Name</p>
-          
+
             <p className="ptag">Price</p>
             <p className="ptag">Market Cap</p>
             <p className="ptag">{`VWAP(24Hr)`}</p>
@@ -49,9 +49,13 @@ const Showdata = () => {
                   <p className="pta">{`$${(
                     Number(d.volumeUsd24Hr) / 1000000000
                   ).toFixed(2)}b`}</p>
-                  <p className="pta">{`${Number(d.changePercent24Hr).toFixed(
-                    2
-                  )}%`}</p>
+                  <p
+                    className={`pta ${
+                      Number(d.changePercent24Hr) < 0 ? "red" : "green"
+                    }`}
+                  >
+                    {`${Number(d.changePercent24Hr).toFixed(2)}%`}{" "}
+                  </p>
                 </div>
               </div>
             );
