@@ -25,13 +25,13 @@ const Footer = () => {
       </div>
       <div>
         <h3>FOLLOW US</h3>
-        <div>
-        <p>
-          <AiOutlineTwitter />
-        </p>
-        <p>
-          <BsFacebook />
-        </p>
+        <div style={{display:"flex"}}>
+          <p>
+            <AiOutlineTwitter style={{ color: "white", fontSize: "40px" }} />
+          </p>
+          <p>
+            <BsFacebook style={{ color: "white", fontSize: "40px" }} />
+          </p>
         </div>
       </div>
       <div>

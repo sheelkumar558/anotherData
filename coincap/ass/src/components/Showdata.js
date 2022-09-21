@@ -36,8 +36,8 @@ const Showdata = () => {
               <div key={d.id} className="show-d">
                 <div className="rank-div">
                   <p className="pta">{d.rank}</p>
-                  <p className="pta">{d.name}</p>
-
+                  <p className="pta"><img width="30px" src={`https://assets.coincap.io/assets/icons/${d.symbol.toLowerCase()}%402x.png`} alt="" /> {d.name}</p>
+                  
                   <p className="pta">{`$${Number(d.priceUsd).toFixed(2)}`}</p>
                   <p className="pta">{`$${(
                     Number(d.marketCapUsd) / 1000000000
