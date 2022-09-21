@@ -16,21 +16,21 @@
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-.show-div{
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    color: black;
+ .show-div{
+  display: grid;
+  margin: auto;
+  width: 80%;
+  grid-template-columns: repeat(8,200px);
 }
 .rank-div{
   display: flex;
   justify-content: space-around;
   
 }
-.ptag{
+/* .ptag{
     margin: 0px 60px 0px 60px;
    
-}
+} */
 .show-d{
   background-color: white;
  margin:0;

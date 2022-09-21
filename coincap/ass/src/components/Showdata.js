@@ -17,12 +17,11 @@ const Showdata = () => {
   return (
     <div>
       <div className="cont-show">
-        <div className="show-div">
+        <div className="show-d">
           <div className="rank-div">
             <p className="ptag">Rank</p>
             <p className="ptag">Name</p>
-          </div>
-          <div className="rank-div">
+          
             <p className="ptag">Price</p>
             <p className="ptag">Market Cap</p>
             <p className="ptag">{`VWAP(24Hr)`}</p>
