@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inp" /><br />
+    <button id="reset">reset</button><br />
+    <button id="add">add</button><br/>
+    <p id="show"></p>
+  </body>
+</html>
+<script>
+  document.getElementById("reset").addEventListener("click", resetF);
+  function resetF() {
+    document.getElementById("inp").value = "";
+  }
+  
+  document.getElementById("add").addEventListener("click", addF);
+  console.log(val);
+  function addF() {
+    var val = document.getElementById("inp").value;
+    console.log(val);
+    document.getElementById("show").innerText=`Display :- ${val}`;
+  }
+</script>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get Text Input Field Value in JavaScript</title>
+</head>
+<body>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" id="btn" >Get Value</button>
+    <h1 id="hhh"></h1>
+    <script>
+      document.getElementById("btn").addEventListener("click",getInputValue);
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            document.getElementById("hhh").innerText = inputVal;
+            // Displaying the value
+            alert(inputVal);
+        }
+    </script>
+</body>
+</html> -->
